@@ -253,7 +253,7 @@ module.exports = {
     *                                                                          *
     ***************************************************************************/
     onlyAllowOrigins: [
-      'https://starlaunch-api.herokuapp.com/'
+      'https://starlaunch-api.herokuapp.com'
     ],
 
 

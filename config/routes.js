@@ -19,7 +19,7 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
 
-  '/': { view: 'pages/homepage' },
+  ' GET /circulatingSupply': { action: 'DataItems/circulatingSupply'}
 
 
   /***************************************************************************

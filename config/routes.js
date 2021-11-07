@@ -19,7 +19,8 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
 
-  ' GET /circulatingSupply': { action: 'DataItems/circulatingSupply'}
+  ' GET /circulatingSupply': { action: 'DataItems/circulatingSupply'},
+  ' GET /kyc/:wallet': { action: 'DataItems/checkKyc'},
 
 
   /***************************************************************************

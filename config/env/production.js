@@ -152,7 +152,7 @@ module.exports = {
       //   'https://example.com',
       // ]
       allRoutes: true,
-      allowOrigins: '*',
+      allowOrigins: 'https://tokensale.starlaunch.com',
       allowCredentials: false
     },
 

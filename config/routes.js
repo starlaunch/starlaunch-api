@@ -20,7 +20,7 @@ module.exports.routes = {
   ***************************************************************************/
 
   ' GET /circulatingSupply': { action: 'DataItems/circulatingSupply'},
-  ' GET /kyc/:wallet': { action: 'DataItems/checkKyc'},
+  ' POST /kyc': { action: 'DataItems/checkKyc'},
 
 
   /***************************************************************************

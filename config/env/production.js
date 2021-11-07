@@ -152,7 +152,8 @@ module.exports = {
       //   'https://example.com',
       // ]
       allRoutes: true,
-      allowOrigins: '*'
+      allowOrigins: '*',
+      allowCredentials: false
     },
 
   },

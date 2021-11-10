@@ -136,7 +136,14 @@ let DataItemsController = {
         // console.log(sails.config.paths);
         let wallet = req.body.wallet;
         if (winners.includes(wallet)) {
-            res.success({win: true});
+            const claims_json = require("../data/claims.json");
+            if (Object.keys(claims_json.claims).includes(wallet)) {
+                res.success({win: true, index: claims_json.claims[wallet].index,
+                                amount: claims_json.claims[wallet].amount,
+                                proof: claims_json.claims[wallet].proof});
+            } else {
+                res.success({win: true});
+            }
         } else {
             const refunds_json = require("../data/refunds.json");
             if (Object.keys(refunds_json.claims).includes(wallet)) {

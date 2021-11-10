@@ -30,7 +30,8 @@ module.exports.security = {
 
   cors: {
     allRoutes: true,
-    allowOrigins: 'https://tokensale.starlaunch.com',
+    // allowOrigins: 'https://tokensale.starlaunch.com',
+    allowOrigins: '*',
     allowCredentials: false,
   },
 

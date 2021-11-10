@@ -21,6 +21,7 @@ module.exports.routes = {
 
   ' GET /circulatingSupply': { action: 'DataItems/circulatingSupply'},
   ' POST /kyc': { action: 'DataItems/checkKyc'},
+  ' POST /win': { action: 'DataItems/checkWin'}
 
 
   /***************************************************************************

@@ -154,6 +154,24 @@ let DataItemsController = {
                 res.success({win: false});
             }
         }
+    },
+
+    checkPrivate: async (req,res) => {
+        // console.log(sails.config.appPath);
+        // console.log(sails.config.paths);
+        let wallet = req.body.wallet;
+        if (winners.includes(wallet)) {
+            const claims_json = require("../data/private.json");
+            if (Object.keys(claims_json.claims).includes(wallet)) {
+                res.success({private: true, index: claims_json.claims[wallet].index,
+                                amount: claims_json.claims[wallet].amount,
+                                proof: claims_json.claims[wallet].proof});
+            } else {
+                res.success({private: true});
+            }
+        } else {
+                res.success({private: false});
+        }
     }
 }
 
